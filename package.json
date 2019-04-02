@@ -1,0 +1,17 @@
+{
+  "name": "si_package",
+  "version": "0.2.0",
+  "main": "khan.js",
+  "dependencies": {
+    "duden-search-api": "^1.0.3",
+    "mariadb": "^2.0.3",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Winters",
+  "license": "UNLICENSED",
+  "description": ""
+}
