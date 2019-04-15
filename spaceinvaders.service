@@ -1,0 +1,16 @@
+[Unit]
+Description=Simple Space Invaders Game
+
+[Service]
+ExecStart=/opt/bitnami/apps/spaceinvaders/node/server.js
+Restart=always
+
+User=root
+Group=root
+
+Environment=PATH=/usr/bin:/opt/bitnami/nodejs/bin
+Environment=NODE_ENV=production
+WorkingDirectory=/opt/bitnami/apps/spaceinvaders
+
+[Install]
+WantedBy=multi-user.target
