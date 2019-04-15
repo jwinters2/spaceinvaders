@@ -25,10 +25,10 @@ table.inst, tr.inst, th.inst
 
 a
 {
-  width: auto;
   text-align: center;
   border: 1px solid #00FF00;
   padding: 20px;
+  margin: auto;
 
   color: #00FF00;
   text-decoration: none;

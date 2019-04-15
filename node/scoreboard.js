@@ -14,6 +14,13 @@ exports.handlePost = function(response, body)
   // parse the data from the JSON
   var query = JSON.parse(body);
 
+  if(query.name == null || query.score == null || query.time == null)
+  {
+    response.writeHead(400);
+    response.end();
+    return;
+  }
+
   console.log("name  = " + query.name);
   console.log("score = " + query.score);
 
