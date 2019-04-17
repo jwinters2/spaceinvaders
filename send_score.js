@@ -2,6 +2,13 @@ var sendScore = function(score)
 {
   var name = prompt("What is your name?");  
 
+  if(name === null)
+  {
+    // don't bother sending anything if the user clicks "Cancel"
+    window.location.href = 'scoreboard.html';
+    return;
+  }
+
   var request = new XMLHttpRequest();
   request.open("POST", "/");
   request.setRequestHeader("Content-type", "application/json");
@@ -21,9 +28,13 @@ var sendScore = function(score)
 
   data = 
   {
-    name: name,
-    score: score,
-    time: timestamp
+    application: "spaceinvaders",
+    data:
+    {
+      name: name,
+      score: score,
+      time: timestamp
+    }
   };
   console.log(JSON.stringify(data));
   request.send(JSON.stringify(data));

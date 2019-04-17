@@ -46,6 +46,10 @@ function getScores()
 	score.className = 'sb';
 	time.className  = 'sb';
 
+	name.style.width = "60%";
+	score.style.width = "10%";
+	time.style.width = "30%";
+
 	score.style.textAlign = 'right';
 
 	time.style.fontSize = '16px';
